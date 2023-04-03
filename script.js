@@ -1,18 +1,4 @@
-// const adviceId = document.querySelector('#adviceId');
-// const advice = document.querySelector('#advice');
-// const btn = document.querySelector('#btn');
 
-// const API_LINK = "https://api.adviceslip.com/advice";
-
-
-// const fetchNewAdvice = async  () => {
-//     const response =await axios(API_LINK);
-//     console.log(response.data)
-// };
-
-// fetchNewAdvice(
-
-// )
 const adviceId = document.querySelector('#adviceId');
 const adviceText = document.querySelector('#adviceText');
 const btn = document.querySelector('#btn');
