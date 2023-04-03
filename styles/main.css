@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: hsl(219, 79%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: hsl(216, 72%, 30%);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 13px;
+    position: relative;
+}
+
+.title {
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-bottom: 14px;
+}
+
+.advice{
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    position: absolute;
+    left: 50%;
+    bottom: -31px;
+    transform: translateX(-50%);
+    background: hsl(150, 100%, 66%);
+    padding: 15px 17px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.advice-generator__divider {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+picture > img {
+    margin: auto;
+    width: 100%; 
+}
+
+@media only screen and (max-width: 425px) {
+.card{
+    margin: 0 12px;
+    padding: 20px;
+}
+}
+
+
+.btn:is(:hover) {
+    box-shadow: 0px 0px 20px #53ffaa;
+}
+
+.btn_pin {
+    transition: transform 250ms;
+}
+.btn:is(:hover) > img {
+    transform: rotate(135deg);
+}
